@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, #3581aa, #1890b4, #00a0ba, #00afbb, #00bdb8);
+    width: 100%;
+    height: 150px;
+}
+
+.logo{
+    display: flex;
+    width: 300px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.logo a{
+    height: 80px;
+    width: 280px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+} 
+.logoTitle  {
+    height: 60px;
+    width: 350px;
+    text-align: left;
+    padding-left: 10px;
+}
+.logoTitle span{
+    background-color: #00BDB8;
+    border-radius: 5px;
+
+}
+.logoTitleImg {
+    height: 50px;
+    width: 70px;
+}
+.nav{
+    width: 100%;
+    background-color: #00BDB8;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-column-gap: 20px;
+}
+
+.navList a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 0 0 1px black;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px 30px;
+    grid-column-gap: 10px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buscadorIcon{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 1px black;
+}
+.nproductsTitle{
+    height: 100%;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-image: linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-shadow: 0 0 1px black;
+}
+.nproductsGalery img{
+    max-height: 250px;
+    max-width: 250px;
+}
+.nproductsGalery{
+    background-image:linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa) ;
+    display: grid;
+    padding-top: 30px;
+    padding-left: 400px;
+    padding-bottom: 30px;
+    grid-template-columns: 250px 250px;
+    grid-column-gap: 300px;
+    list-style: none;
+}
+
+.nproductsGalery li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3 black;
+}
+.img1{
+    text-decoration: none;
+}
+.img2{
+    text-decoration: none;
+}
+.svgPs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.svgPs h2{
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3581aa;
+    text-shadow: 0 0 1px black;
+    text-align: center;
+}
+.bsProductsGalery img{
+    max-width: 300px;
+    max-height: 300px;
+    transition: all 0.7s;
+}
+.bsProductsGalery img:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.bsProductsGalery{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 20px;
+    grid-column-gap: 100px;
+    grid-row-gap: 25px;
+}
+.bsProductsGalery li{
+    list-style: none;
+    text-align: center;
+    
+}
+.bsProductsGalery li span {
+    color: #00BDB8;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bsProductsGalery a{
+    color: #384955;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    height: 160px;
+    background-image: linear-gradient(to right, #3581aa, #1890b4, #00a0ba, #00afbb, #00bdb8);
+}
+.footerList{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-column-gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer li{
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer i {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 1px white;
+}
+.footer p{
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+/*Tecnologia*/
+.tecDiv{
+    display: flex;
+    justify-content: center;
+}
+.tec h2{
+    margin-top: 40px;
+    padding-top: 10px;
+    background-image:linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa) ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px black;
+}
+.tecGalery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px 20px 300px 20px 300px 20px;
+    grid-column-gap: 90px;
+    grid-row-gap: 50px;
+    text-align: center;
+}
+.tecGalery img{
+    max-width: 300px;
+    max-height: 300px;
+    transition: all 0.7s;
+}
+.tecGalery img:hover{
+    transform: scale(1.07);
+    transition: 0.7s;
+}
+.tecGalery li{
+    list-style: none;
+}
+.tecGalery a{
+    text-decoration: none;
+}
+.tecPrice {
+    color: #00BDB8;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
+}
+.tecGalery a{
+    color: #384955;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*Contacto*/
+.mainContact{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-column-gap: 150px;
+}
+.mainContact svg{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.Contact h2{
+    margin-top: 40px;
+    padding-top: 10px;
+    background-image:linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa) ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px black;
+}
+.formBox{
+    display: flex;
+    justify-content: center;
+}
+
+.form fieldset {
+    display: grid;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px;
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa);
+    border: #1890b4;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.form fieldset legend{
+    padding-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+    color: white;
+    text-align: center;
+}
+/*Media Queries*/
+
+@media only screen and (min-width:320px) and (max-width:479px){
+    .header{
+        width: 100%;
+    }
+    .logo{
+        width: 50px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 250px 20px;
+
+    }
+    .logo img{
+    width: 50px;
+    height: 70px;
+}
+.logo a{
+    font-size: 15px;
+}
+.buscador{
+    width: 80px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+.buscadorDiv{
+    width: 80px;
+}
+.nav{
+    max-width: 100%;
+}
+.navList{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-column-gap: 50px;
+}
+.navList a{
+    font-size: 130%;
+}
+
+.nproductsTitle{
+    margin-top: 0px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+.svgPs svg{
+    width: 80%;
+    height: 320px;
+}
+.svgPs h2{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+.nproductsGalery img{
+    width: 120px;
+    height: 120px;
+}
+.nproductsGalery{
+    width: 100%;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 10px;
+}
+.bsProductsGalery img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.bsProductsGalery{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 20px 250px 20px 250px 20px;
+    grid-row-gap: 30px;
+    text-align: justify;
+}
+.bsProductsGalery li{
+    font-size: 23px;
+}
+.tecGalery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: 150px 20px 150px 20px 150px 20px;
+    grid-column-gap: 70px;
+    grid-row-gap: 60px;
+    text-align: justify;
+}
+.tecGalery li a{
+    font-size: 10px;
+}
+.tecGalery img{
+    max-width: 80px;
+    max-height: 80px;
+}
+.textPrice {
+    font-size: 5px;
+}
+.footer{
+    width: 100%;
+}
+.mainContact svg{
+    height: 100%;
+    width: 100%;
+}
+.mainContact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+}
+}
+@media only screen and (min-width:480px) and (max-width:598px){
+    .header{
+        width: 100%;
+    }
+    .logo{
+        width: 50px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 250px 20px;
+
+    }
+    .logo img{
+    width: 50px;
+    height: 70px;
+}
+.logo a{
+    font-size: 15px;
+}
+.buscador{
+    width: 80px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+.buscadorDiv{
+    width: 80px;
+}
+.nav{
+    width: 100%;
+}
+.navList{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-column-gap: 50px;
+}
+.navList a{
+    font-size: 150%;
+}
+
+.nproductsTitle{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+.svgPs svg{
+    width: 80%;
+    height: 320px;
+}
+.svgPs h2{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+.nproductsGalery img{
+    width: 120px;
+    height: 120px;
+}
+.nproductsGalery{
+    width: 100%;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 10px;
+}
+.bsProductsGalery img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.bsProductsGalery{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 20px 250px 20px 250px 20px;
+    grid-row-gap: 30px;
+    text-align: justify;
+}
+.bsProductsGalery li{
+    font-size: 23px;
+}
+.tecGalery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 150px 20px 150px 20px 150px 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+    text-align: justify;
+}
+.tecGalery li a{
+    font-size: 10px;
+}
+.tecGalery img{
+    max-width: 120px;
+    max-height: 120px;
+}
+.textPrice {
+    font-size: 5px;
+}
+.footer{
+    width: 100%;
+}
+.mainContact svg{
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+.mainContact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+}
+.form{
+    margin-top: 20px;
+}
+}
+
+@media only screen and (min-width:599px) and (max-width:767){
+    .header{
+        width: 100%;
+    }
+    .logo{
+        width: 50px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 250px 20px;
+    }
+    .logo img{
+    width: 50px;
+    height: 70px;
+}
+.logo a{
+    font-size: 15px;
+}
+.buscador{
+    width: 80px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+.buscadorDiv{
+    width: 80px;
+}
+.nav{
+    width: 100%;
+}
+.navList{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-column-gap: 50px;
+}
+.navList a{
+    font-size: 150%;
+}
+
+.nproductsTitle{
+    margin-top: 0px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+.svgPs svg{
+    width: 80%;
+    height: 320px;
+}
+.svgPs h2{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+.nproductsGalery img{
+    max-width: 120px;
+    max-height: 120px;
+}
+.nproductsGalery{
+    width: 100%;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 10px;
+}
+.bsProductsGalery img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.bsProductsGalery{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 20px 250px 20px 250px 20px;
+    grid-row-gap: 30px;
+    text-align: justify;
+}
+.bsProductsGalery li{
+    font-size: 23px;
+}
+.tecGalery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 150px 20px 150px 20px 150px 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+    text-align: justify;
+}
+.tecGalery li a{
+    font-size: 10px;
+}
+.tecGalery img{
+    max-width: 120px;
+    max-height: 120px;
+}
+.textPrice {
+    font-size: 5px;
+}
+.footer{
+    width: 100%;
+}
+.mainContact svg{
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+.mainContact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+}
+.form{
+    margin-top: 20px;
+}
+}
