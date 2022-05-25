@@ -68,6 +68,12 @@ header {
     text-shadow: 0 0 1px black;
 }
 
+.navList a:hover{
+    background-color: #0686827e;
+    border: rgba(255, 255, 255, 0.521) 1px solid;
+    border-radius: 5px;
+    text-shadow: 0 0 1px white;
+}
 .buscador{
     display: flex;
     justify-content: center;
@@ -96,6 +102,7 @@ header {
     font-weight: bolder;
     text-shadow: 0 0 1px black;
 }
+
 .nproductsGalery img{
     max-height: 250px;
     max-width: 250px;
@@ -119,6 +126,10 @@ header {
     text-align: center;
     color: white;
     text-shadow: 0 0 3 black;
+    transition: all 0.7s;
+}
+.nproductsGalery li:hover{
+    transform: scale(1.1);
 }
 .img1{
     text-decoration: none;
@@ -347,15 +358,15 @@ header {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: 60px 60px 60px;
-    grid-column-gap: 50px;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 20px;
 }
 .navList a{
-    font-size: 130%;
+    font-size: 150%;
 }
 
 .nproductsTitle{
-    margin-top: 0px;
+    margin-top: 20px;
     width: 100%;
     font-size: 25px;
     text-align: center;
