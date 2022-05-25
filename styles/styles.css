@@ -101,10 +101,11 @@ header {
     max-width: 250px;
 }
 .nproductsGalery{
+    display: flex;
+    justify-content: center;
     background-image:linear-gradient(to right, #00bdb8, #00afbb, #00a0ba, #1890b4, #3581aa) ;
     display: grid;
     padding-top: 30px;
-    padding-left: 400px;
     padding-bottom: 30px;
     grid-template-columns: 250px 250px;
     grid-column-gap: 300px;
@@ -153,15 +154,16 @@ header {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 300px 20px;
-    grid-column-gap: 100px;
-    grid-row-gap: 25px;
+    grid-gap: 10px;
+    padding: 10px;
 }
+
 .bsProductsGalery li{
     list-style: none;
     text-align: center;
-    
+    font-size: 35px;
 }
 .bsProductsGalery li span {
     color: #00BDB8;
@@ -260,6 +262,7 @@ header {
 /*Contacto*/
 .mainContact{
     display: flex;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-column-gap: 150px;
@@ -310,7 +313,7 @@ header {
 }
 /*Media Queries*/
 
-@media only screen and (min-width:320px) and (max-width:479px){
+@media only screen and (min-width:320px) and (max-width:639px){
     .header{
         width: 100%;
     }
@@ -389,13 +392,13 @@ header {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: 250px 20px 250px 20px 250px 20px;
-    grid-row-gap: 30px;
-    text-align: justify;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3,300px);
+    grid-gap: 50px;
+    padding: 10px;
 }
 .bsProductsGalery li{
-    font-size: 23px;
+    font-size: 35px;
 }
 .tecGalery{
     margin-top: 50px;
@@ -421,6 +424,7 @@ header {
     width: 100%;
 }
 .mainContact svg{
+    margin-top: 100px;
     height: 100%;
     width: 100%;
 }
@@ -430,8 +434,11 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
 }
+.form{
+    margin-top: 60px;
 }
-@media only screen and (min-width:480px) and (max-width:598px){
+}
+@media only screen and (min-width:640px) and (max-width:780px){
     .header{
         width: 100%;
     }
@@ -510,13 +517,13 @@ header {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: 250px 20px 250px 20px 250px 20px;
-    grid-row-gap: 30px;
-    text-align: justify;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3,300px);
+    grid-gap: 50px;
+    padding: 10px;
 }
 .bsProductsGalery li{
-    font-size: 23px;
+    font-size: 35px;
 }
 .tecGalery{
     margin-top: 50px;
@@ -542,7 +549,7 @@ header {
     width: 100%;
 }
 .mainContact svg{
-    margin-top: 80px;
+    margin-top: 200px;
     height: 100%;
     width: 100%;
 }
@@ -553,11 +560,11 @@ header {
     grid-template-rows: 200px 1fr;
 }
 .form{
-    margin-top: 20px;
+    margin-top: 200px;
 }
 }
 
-@media only screen and (min-width:599px) and (max-width:767){
+@media only screen and (min-width:781px) and (max-width:1024){
     .header{
         width: 100%;
     }
